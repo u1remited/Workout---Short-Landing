@@ -1,0 +1,29 @@
+.nav {
+
+    &__container { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 7.3125rem;
+    }
+
+    &__logo {
+        color: $white-color;
+        font-weight: $bold;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 1.25rem;
+    }
+
+    &__link {
+        color: $white-color;
+        font-size: $header-fz;
+        text-transform: uppercase;
+        &:hover {
+            color: $button-color;
+        }
+    }
+}

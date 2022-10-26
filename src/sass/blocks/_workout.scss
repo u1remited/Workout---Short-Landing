@@ -1,0 +1,48 @@
+.workout {
+    padding: 11.8125rem 0 12.5rem 0;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7.5rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &_1 {
+            align-self: flex-end;
+            column-gap: 4.375rem;
+        }
+
+        &_2 {
+            column-gap: 5.5625rem;
+            flex-direction: row-reverse;
+            align-self: flex-start;
+        }
+    }
+
+    &__title {
+        max-width: 591px;
+    }
+    
+    &__descr {
+        margin-top: 2.375rem;
+        max-width: 480px;
+        letter-spacing: 0.3px;
+        line-height: 1.71;
+        font-size: .875rem;
+    }
+
+    &__btn {
+        margin-top: 1.5rem;
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    &__icon {
+        color: $white-color;
+        transition: .3s all;
+    }
+}

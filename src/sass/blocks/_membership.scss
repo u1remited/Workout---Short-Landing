@@ -1,0 +1,80 @@
+.membership {
+    padding: 0 4.8rem 6.3125rem 4.8rem;
+    &__container {
+        hr {
+            margin-top: 1.75rem;
+            border: 0.5px solid $white-color;
+            opacity: 0.4;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column {
+        padding: 4.4375rem 4.25rem 4.8125rem;
+        &_1{
+            background-color: $shape-blue-second;
+            .membership__btn {
+                margin-top: 6.375rem;
+            }
+
+        }
+        &_2 {
+            background-color: $shape-blue-first;
+            .membership__btn {
+                margin-top: 1.75rem;
+            }
+        }
+    }
+
+    &__name {
+        color: $white-color;
+        text-align: center;
+        letter-spacing: 0.3px;
+        line-height: 1.25;
+        font-size: 2.5rem;
+        font-weight: $semi;
+    }
+
+    &__descr {
+        letter-spacing: 0.5px;
+        line-height: 1.33;
+        font-size: 1.125rem;
+        margin-top: 2.125rem;
+        max-width: 402px;
+    }
+
+    &__list {
+        margin-top: 1rem;
+        list-style: disc;
+        padding-left: 1.18rem;
+        max-width: 380px;
+    }
+
+    &__item {
+        letter-spacing: 0.5px;
+        font-size: 1.125rem;
+        line-height: 1.33;
+    }
+
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        color: $white-color;
+        transition: .3s all;
+    }
+}
