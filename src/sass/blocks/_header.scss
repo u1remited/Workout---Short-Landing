@@ -26,4 +26,100 @@
             color: $button-color;
         }
     }
+    &__burger {
+        display: none;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+        span {
+            display: block;
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $white-color;
+            transition: .4s all;
+            &:nth-of-type(2) {
+                top: calc(50% - 5px)
+            }
+            &:nth-of-type(3) {
+                top: calc(50% + 5px)
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .nav {
+        &__container {
+            min-height: 5.4rem;
+        }
+        &__list {
+            column-gap: .8rem;
+        }
+        &__link {
+            font-size: .7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .nav {
+        &__list {
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: $body-color;
+            padding: 5rem 3rem;
+            transition: .4s all;
+            transform: translateX(100%);
+            z-index: 100;
+            &_active {
+                transform: translateX(0);
+            }
+        }
+        &__item {
+            text-align: center;
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+        &__link {
+            font-size: 1.4rem;
+            font-weight: $semi;
+        }
+        &__burger {
+            display: block;
+            &_active {
+                span {
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        transform: translate(-50%, 0%) rotate(45deg);
+                    }
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        transform: translate(-50%, 0%) rotate(-45deg); 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479.98px) {
+    .nav {
+        &__container {
+            min-height: 4rem;
+        }
+    }
 }
