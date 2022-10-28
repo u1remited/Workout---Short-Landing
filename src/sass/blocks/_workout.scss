@@ -46,3 +46,174 @@
         transition: .3s all;
     }
 }
+
+@media screen and (max-width: 1199.98px) {
+    .workout {
+        padding: 9rem 0 12.5rem 0;
+        &__container {
+            row-gap: 6rem;
+        }
+        &__item {
+            &_1 {
+                column-gap: 3.6rem;
+                .workout__title {
+                    max-width: 300px;
+                }
+            }
+            &_2 {
+                column-gap: 3.6rem;
+            }
+        }
+        &__descr {
+            margin-top: 1.6rem;
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .workout {
+        padding: 16rem 0 12.5rem 0;
+        &__container {
+            row-gap: 13rem;
+        }
+        &__descr {
+            max-width: 94%;
+            margin-top: 1rem;
+        }
+        &__item {
+            align-items: flex-end;
+            &_1 {
+                position: relative;
+                .workout__img {
+                    position: absolute;
+                    width: 476px;
+                    z-index: 1;
+                    right: 0;
+                }
+                .workout__title {
+                    max-width: 500px;
+                }
+            }
+            &_2 {
+                position: relative;
+                .workout__img {
+                    position: absolute;
+                    width: 500px;
+                    z-index: 1;
+                    left: 0;
+                }
+                .workout__title {
+                    max-width: 460px;
+                }
+            }
+        }
+        &__content {
+            position: relative;
+            z-index: 2;
+            padding: 1rem 2rem;
+            flex: 0 0 80%;
+            background: rgba(23, 23, 23, 0.14);
+            border-radius: 1rem;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.1px);
+            border: 1px solid rgba(23, 23, 23, 0.14);
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .workout {
+        padding: 6rem 0 12.5rem 0;
+        &__container {
+            row-gap: 22rem;
+        }
+        &__item {
+            flex-direction: column;
+            &_1 {
+                .workout__img {
+                    bottom: -80%;
+                    transform: translateY(20%);
+                    width: 400px;
+                }
+            }
+            &_2 {
+                .workout__img {
+                    bottom: -66%;
+                    transform: translateY(20%);
+                    width: 370px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .workout {
+        &__container {
+            row-gap: 19rem;
+        }
+        &__item {
+            &_1 {
+                .workout__img {
+                    bottom: -62%;
+                    width: 300px;
+                }
+            }
+            &_2 {
+                .workout__img {
+                    bottom: -52%;
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479.98px) {
+    .workout {
+        padding: 4rem 0 5rem 0;
+        &__container {
+            row-gap: 3rem;
+        }
+        &__btn {
+            margin-top: 1rem;
+        }
+        &__item {
+            &_1 {
+                position: unset;
+                row-gap: 1.6rem;
+                .section__title {
+                    max-width: 200px;
+                    margin-left: 0;
+                }
+                .workout__img {
+                    position: unset;
+                    width: 100%;
+                    transform: none;
+                }
+            }
+            &_2 {
+                position: unset;
+                row-gap: 2rem;
+                .section__title {
+                    max-width: 90%;
+                    margin-left: 0;
+                }
+                .workout__img {
+                    position: unset;
+                    width: 100%;
+                    transform: none;
+                }
+            }
+        }
+        &__content {
+            background: none;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            border-radius: none;
+            backdrop-filter: none;
+        }
+    }
+}
