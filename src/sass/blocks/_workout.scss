@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 1199.98px) {
     .workout {
-        padding: 9rem 0 12.5rem 0;
+        padding: 9rem 0;
         &__container {
             row-gap: 6rem;
         }
@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 991.98px) {
     .workout {
-        padding: 16rem 0 12.5rem 0;
+        padding: 16rem 0 8rem 0;
         &__container {
             row-gap: 13rem;
         }
@@ -117,14 +117,14 @@
             border-radius: 1rem;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(4.1px);
-            border: 1px solid rgba(23, 23, 23, 0.14);
+            border: 1px solid rgba(23, 23, 23, 0.14); 
         }
     }
 }
 
 @media screen and (max-width: 767.98px) {
     .workout {
-        padding: 6rem 0 12.5rem 0;
+        padding: 6rem 0 24rem 0;
         &__container {
             row-gap: 22rem;
         }
@@ -150,6 +150,7 @@
 
 @media screen and (max-width: 575.98px) {
     .workout {
+        padding: 6rem 0 18rem 0;
         &__container {
             row-gap: 19rem;
         }
@@ -172,7 +173,7 @@
 
 @media screen and (max-width: 479.98px) {
     .workout {
-        padding: 4rem 0 5rem 0;
+        padding: 4rem 0;
         &__container {
             row-gap: 3rem;
         }
