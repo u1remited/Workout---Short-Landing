@@ -8,7 +8,8 @@ window.addEventListener('scroll', scrollUp);
 
 function scrollUpMobile(){
     const scrollUpMobile = document.getElementById('scroll-up-mobile');
-    if(this.scrollY >= 1400) scrollUpMobile.classList.add('show-scroll-mobile'); else scrollUpMobile.classList.remove('show-scroll-mobile');
+    if(this.scrollY >= 1400) scrollUpMobile.classList.add('show-scroll-mobile'); 
+    else scrollUpMobile.classList.remove('show-scroll-mobile');
 }
 window.addEventListener('scroll', scrollUpMobile);
 
