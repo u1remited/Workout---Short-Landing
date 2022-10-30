@@ -61,3 +61,17 @@
 .show-scroll-mobile {
     bottom: 1.8rem;
 }
+
+::-webkit-scrollbar {
+    width: .40rem;
+    background-color: rgb(32, 32, 32);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    border-radius: .5rem;
+    &:hover {
+        background-color: $shape-blue-first;
+    }
+}

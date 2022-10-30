@@ -1,5 +1,5 @@
 .home {
-    padding: 8.1875rem 0 12.5rem 3.5625rem ;
+    padding: 15.5rem 0 12.5rem 3.5625rem ;
     &__container {
         position: relative;
         z-index: 2;
@@ -190,7 +190,7 @@
 
 @media screen and (max-width: 1199.98px) {
     .home {
-        padding: 6rem 0 10rem 1rem;
+        padding: 13rem 0 10rem 1rem;
         &__title {
             font-size: 8rem;
         }
@@ -216,7 +216,7 @@
 
 @media screen and (max-width: 991.98px) {
     .home {
-        padding: 4rem 0 8rem 0;
+        padding: 11rem 0 8rem 0;
         &__title {
             font-size: 7rem;
             max-width: 760px;
@@ -250,7 +250,7 @@
 
 @media screen and (max-width: 767.98px) {
     .home {
-        padding: 3rem 0 6rem 0;
+        padding: 9rem 0 6rem 0;
         &__title {
             font-size: 5rem;
             max-width: 500px;
@@ -296,7 +296,7 @@
 
 @media screen and (max-width: 479.98px) {
     .home {
-        padding: 2rem 0 4rem 0;
+        padding: 6rem 0 4rem 0;
         &__decor {
             display: none;
         }

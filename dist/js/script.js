@@ -32,3 +32,14 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// Fixed menu animation
+
+window.addEventListener('scroll', e => {
+    const navBar = document.getElementById('navbar').classList;
+    const activeClass = "nav__container_fixed";
+    
+    if(scrollY > 600) navBar.add(activeClass);
+    else navBar.remove(activeClass);
+});
